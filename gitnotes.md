@@ -42,10 +42,14 @@ Start by initating the repository.
 ```bash
 git init
 ```
+MOVE TO GITHUB. From there, create a new repository by clicking on the plus in the top right. 
 
-- git remote add origin git@github.com:AngelsHead/originspecies.git
-- origin above is arbitrary
-- Then, you use `git push -u` to sync your local repo to the online version.
+**Make sure you have ssh selected.** The copy the link and come back to VS code.. 
+```bash
+git remote add -text- -link- 
+```
+- Replace text above with a name for the repo, and link with the link from github
+- Then, you use `git push -u -text- main` to sync your local repo to the online version.
 - `-u` flag only necessary for first time.
 - Once you set it up, you just need `git push` to upload any and all commits to online.
 - Additionally, once set up ypu dont need to "git add" anymore. Just `git push`. 
