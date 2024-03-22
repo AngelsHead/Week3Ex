@@ -31,3 +31,29 @@ If you need to undo a change or accidently delete something, you can use git to 
 git restore todo.txt
 ```
 
+### General advice
+- Use `git status` often.
+- Make many, small commits regularly. Like quick saves. 
+- Make the commit notes descriptive. 
+- Try to just change one thing per commit. Makes it easier to track changes.
+
+### Linking Repository to Github
+Start by initating the repository.
+```bash
+git init
+```
+
+- git remote add origin git@github.com:AngelsHead/originspecies.git
+- origin above is arbitrary
+- Then, you use `git push -u` to sync your local repo to the online version.
+- `-u` flag only necessary for first time.
+- Once you set it up, you just need `git push` to upload any and all commits to online.
+- Additionally, once set up ypu dont need to "git add" anymore. Just `git push`. 
+
+### Ignoring certian files
+- Create `gitignore` files. (that then must be commited.. lol)
+- This will create a **list** of all files for git to ignore. 
+```bash
+echo "data/" > .gitignore
+echo "*~" >> .gitignore
+```
